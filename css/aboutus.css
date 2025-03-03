@@ -1,0 +1,129 @@
+.AboutFlexWrap{
+    /* background-color: aqua !important; */
+    margin-top: 40px;
+}
+.AboutFlexWrapInner{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+.leftFlex, .rightFlex{
+    width: 20%;
+}
+.middleFlex{
+    width: 50%;
+}
+.leftFlexContent{
+    background-color: gainsboro;
+    padding: 20px;
+    border-radius: 10px;
+}
+.leftFlexContent h2{
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.leftFlexContent p{
+    color: rgb(55, 55, 55);
+    margin-top: 15px;
+    font-size: 12px;
+}
+.leftFlexContent p a{
+    color: #1854b4;
+    cursor: pointer;
+}
+.middleFlex {
+    cursor: pointer;
+}
+.middleFlex .middleFlexwrap{
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 300px;
+    background-color: rgb(128, 229, 230);
+    max-height: 300px;
+    color: #eee;
+    font-weight: 900;
+    border-radius: 10px;
+}
+.middleFlexPara h2{
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.middleFlexPara p{
+    font-size: 13px;
+    line-height: 30px;
+    color: rgb(135, 133, 133);
+}
+
+.rightFlexNum{
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.rightFlexNum h3{
+    color: #ececec6d;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.rightFlexNum p{
+    color: white;
+    font-size: 11px;
+    padding-top: 10px;
+}
+.one{   
+    background-color: rgb(222, 112, 72);
+}
+.two{   
+    background-color: rgb(232, 183, 36);
+}
+.three{   
+    background-color: rgb(81, 39, 220);
+}
+@media (max-width:1199px){
+    .AboutFlexWrapInner{
+        flex-direction: column;
+    }
+    .leftFlex, .rightFlex{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .middleFlex{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+}
+@media (max-width:991px){
+    .AboutFlexWrapInner{
+        flex-direction: column;
+    }
+    .leftFlex, .rightFlex{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .middleFlex{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+}
+@media (max-width:767px){
+    .AboutFlexWrapInner{
+        flex-direction: column;
+    }
+    .leftFlex, .rightFlex{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .middleFlex{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
